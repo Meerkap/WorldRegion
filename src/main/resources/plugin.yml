@@ -7,7 +7,7 @@
 #--------------------#
 
 main: me.pablockda.worldregion.WorldRegion
-version: 1.4
+version: 1.5
 api-version: 1.13
 name: WorldRegion
 author: PablockDA
