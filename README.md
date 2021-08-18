@@ -28,10 +28,10 @@ Step 1. Add the JitPack repository to your build file
 
 Step 2. Add the dependency
 
-	 <dependency>
-	    <groupId>com.github.PablockDA</groupId>
+    <dependency>
+        <groupId>com.github.Meerkap</groupId>
 	    <artifactId>WorldRegion</artifactId>
-	    <version>8f1906ab55</version>
+	    <version>-SNAPSHOT</version>
 	</dependency>
   
 
