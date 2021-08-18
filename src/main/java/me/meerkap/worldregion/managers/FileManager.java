@@ -1,8 +1,8 @@
-package me.pablockda.worldregion.managers;
+package me.meerkap.worldregion.managers;
 
-import me.pablockda.worldregion.objects.WR;
-import me.pablockda.worldregion.utils.Config;
-import me.pablockda.worldregion.utils.Mensajes;
+import me.meerkap.worldregion.objects.WR;
+import me.meerkap.worldregion.utils.Config;
+import me.meerkap.worldregion.utils.Mensajes;
 import org.bukkit.Bukkit;
 
 import java.util.HashMap;
@@ -11,7 +11,7 @@ public class FileManager {
 
     Mensajes m = new Mensajes();
 
-    public HashMap<String, WR>  loadRegions( Config config )  {
+    public HashMap<String, WR>  loadRegions(Config config )  {
 
         HashMap<String, WR> regions = null ;
 

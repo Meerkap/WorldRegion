@@ -1,10 +1,9 @@
-package me.pablockda.worldregion.api;
+package me.meerkap.worldregion.api;
 
-import me.pablockda.worldregion.WorldRegion;
-import me.pablockda.worldregion.managers.FileManager;
-import me.pablockda.worldregion.objects.WR;
-import me.pablockda.worldregion.utils.Config;
-import me.pablockda.worldregion.utils.Mensajes;
+import me.meerkap.worldregion.WorldRegion;
+import me.meerkap.worldregion.managers.FileManager;
+import me.meerkap.worldregion.objects.WR;
+import me.meerkap.worldregion.utils.Config;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 

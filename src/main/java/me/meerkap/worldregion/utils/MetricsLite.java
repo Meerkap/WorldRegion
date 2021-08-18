@@ -1,4 +1,4 @@
-package me.pablockda.worldregion.utils;
+package me.meerkap.worldregion.utils;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;

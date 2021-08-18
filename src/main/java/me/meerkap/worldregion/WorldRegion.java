@@ -1,17 +1,17 @@
-package me.pablockda.worldregion;
+package me.meerkap.worldregion;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import me.pablockda.worldregion.api.WorldRegionAPI;
-import me.pablockda.worldregion.utils.MetricsLite;
+import me.meerkap.worldregion.api.WorldRegionAPI;
+import me.meerkap.worldregion.utils.MetricsLite;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.pablockda.worldregion.utils.Mensajes;
+import me.meerkap.worldregion.utils.Mensajes;
 
 
 public class WorldRegion extends JavaPlugin{

@@ -1,4 +1,4 @@
-package me.pablockda.worldregion.objects;
+package me.meerkap.worldregion.objects;
 
 public class WR {
 
