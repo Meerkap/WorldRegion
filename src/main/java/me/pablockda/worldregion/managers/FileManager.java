@@ -9,6 +9,8 @@ import java.util.HashMap;
 
 public class FileManager {
 
+    Mensajes m = new Mensajes();
+
     public HashMap<String, WR>  loadRegions( Config config )  {
 
         HashMap<String, WR> regions = null ;
@@ -38,10 +40,10 @@ public class FileManager {
                 }
             }
 
-            Bukkit.getConsoleSender().sendMessage(Mensajes.ChatOnColor("&4[&6WorldRegion&4] &8>> &eRegions loaded correctly"));
+            Bukkit.getConsoleSender().sendMessage( m.ChatOnColor("&4[&6WorldRegion&4] &8>> &eRegions loaded correctly"));
 
         } catch (Exception e) {
-            Bukkit.getConsoleSender().sendMessage(Mensajes.ChatOnColor("&4[&6WorldRegion&4] &8>> &4Error: &eLoading regions"));
+            Bukkit.getConsoleSender().sendMessage( m.ChatOnColor("&4[&6WorldRegion&4] &8>> &4Error: &eLoading regions"));
             e.printStackTrace();
         }
 

@@ -18,6 +18,7 @@ public class WorldRegion extends JavaPlugin{
 
 	private PluginDescriptionFile pdfFile = getDescription();
 	private String version = this.pdfFile.getVersion();
+	private Mensajes m = new Mensajes();
 
 	private WorldRegionAPI worldRegionAPI;
 
@@ -27,9 +28,7 @@ public class WorldRegion extends JavaPlugin{
 
 		new MetricsLite(this);
 
-		Mensajes.cargaPlugin(this.getDescription().getName(), this.getDescription().getVersion());
-		
-		//this.getCommand("worldregion").setExecutor( new Comands(this) );
+		m.cargaPlugin(this.getDescription().getName(), this.getDescription().getVersion());
 		
 		updateChecker();
 		
@@ -37,7 +36,7 @@ public class WorldRegion extends JavaPlugin{
 
 	// Descarga del Plugin
 	public void onDisable() {
-		Mensajes.descargaPlugin(this.getDescription().getName(), this.getDescription().getVersion());
+		m.descargaPlugin(this.getDescription().getName(), this.getDescription().getVersion());
 	}
 	
 	private void updateChecker() {
@@ -51,12 +50,12 @@ public class WorldRegion extends JavaPlugin{
 	      if ((latestversion.length() <= 7) &&
 	        (!this.version.equals(latestversion)))
 	      {
-	        Bukkit.getConsoleSender().sendMessage(Mensajes.ChatOnColor("&4[&6WorldRegion&4] &8>> &cVersion &e(" + latestversion + "&e) &cis available."));
-	        Bukkit.getConsoleSender().sendMessage(Mensajes.ChatOnColor("&4[&6WorldRegion&4] &8>> &cYou can download it at: &ehttps://www.spigotmc.org/resources/69426/"));
+	        Bukkit.getConsoleSender().sendMessage(m.ChatOnColor("&4[&6WorldRegion&4] &8>> &cVersion &e(" + latestversion + "&e) &cis available."));
+	        Bukkit.getConsoleSender().sendMessage(m.ChatOnColor("&4[&6WorldRegion&4] &8>> &cYou can download it at: &ehttps://www.spigotmc.org/resources/69426/"));
 	      }
 	    }
 	    catch (Exception localException) {
-	      Bukkit.getConsoleSender().sendMessage(Mensajes.ChatOnColor("&4[&6WorldRegion&4] &8>> &cError while checking update."));
+	      Bukkit.getConsoleSender().sendMessage(m.ChatOnColor("&4[&6WorldRegion&4] &8>> &cError while checking update."));
 	    }
 	}
 

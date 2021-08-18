@@ -11,7 +11,7 @@ Terms of service By using this API you agree to the following terms:
   
   However, for any plugin you release on Spigot, MCMarket or anywhere else, you must provide credit to World Region with a clear link to     this page (https://www.spigotmc.org/resources/world-region-api.69426/) on your Overview.
 
-For Bugs Mp Me
+For Bugs please use https://github.com/Meerkap/WorldRegion/issues
 
 ## How to include this API:
 

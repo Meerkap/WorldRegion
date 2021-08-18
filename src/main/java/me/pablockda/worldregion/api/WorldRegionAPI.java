@@ -339,7 +339,7 @@ public class WorldRegionAPI {
 
         List<String> list = new ArrayList<>();
 
-        if(!Mensajes.isNumericPositiveOnly( String.valueOf(range) )) { return list;	}
+        if(!isNumericPositiveOnly( String.valueOf(range) )) { return list;	}
 
         if( regions.isEmpty() ) { return list; }
 
@@ -405,5 +405,10 @@ public class WorldRegionAPI {
     public double getDistanceBetween2DPoints( double aX, double aZ, double bX, double bZ) {
         return Math.sqrt( Math.pow( ( bX - aX) , 2 ) + Math.pow( (bZ - aZ), 2 ) );
     }
+
+    private boolean isNumericPositiveOnly(String str){
+        return str.matches("[+]?\\d*?");
+    }
+
 
 }
