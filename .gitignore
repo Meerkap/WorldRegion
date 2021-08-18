@@ -1,4 +1,3 @@
 # Project exclude paths
 /target/
-pom.xml
 .idea
