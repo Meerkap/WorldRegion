@@ -31,7 +31,7 @@ Step 2. Add the dependency
     <dependency>
         <groupId>com.github.Meerkap</groupId>
 	    <artifactId>WorldRegion</artifactId>
-	    <version>-SNAPSHOT</version>
+	    <version>1b940595ac</version>
 	</dependency>
   
 
